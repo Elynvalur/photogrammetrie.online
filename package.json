@@ -1,0 +1,22 @@
+{
+  "name": "photogrammetrie.online",
+  "version": "0.0.1",
+  "description": "photogrammetrie.online website",
+  "main": "compile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LucaJunge/photogrammetrie.online.git"
+  },
+  "author": "Luca Junge <ljunge@studenten.hs-bremerhaven.de> (https://www.lucajunge.de/)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/LucaJunge/photogrammetrie.online/issues"
+  },
+  "homepage": "https://github.com/LucaJunge/photogrammetrie.online#readme",
+  "dependencies": {
+    "handlebars": "^4.7.6"
+  }
+}
