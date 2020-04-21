@@ -1,0 +1,22 @@
+.section:nth-child(2n+1) {
+	background-color: #FFFFFF;
+}
+
+.section:nth-child(2n) {
+	background-color: #FAFAFA;
+}
+
+.jumbotron {
+	background-color: #BCDBFE;
+}
+
+.jumbotron h1 {
+	font-size: 6vw;
+	word-wrap: anywhere;
+}
+
+#jumbotroncanvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}

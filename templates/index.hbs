@@ -4,12 +4,57 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css">
 		<title>{{ title }}</title>
 	</head>
 	<body>
 		
-		<nav id="navbar" class="nav navbar
-		<h1>Hello World</h1>
+		<nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light">
+			<a class="navbar-brand" href="#">{{ title }}</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Navbar anzeigen">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Tutorials</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Über</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="jumbotron jumbotron-fluid mb-0">
+			<!--canvas id="jumbotroncanvas"></canvas-->
+			<div class="container">
+				<h1 class="display-4">Photogrammetrie</h1>
+				<p class="lead">3D-Modelle aus Bildern generieren</p>
+				<hr class="my-4">
+				<p>Erklärungen, Projekte & Tutorials</p>
+				<a class="btn btn-primary" href="#" role="button">Mehr erfahren</a>
+			</div>
+		</div>
+
+		<div class="container-fluid section py-5">
+			<div class="container text-left">
+				<h2>Hier ist eine Überschrift</h2>
+				<hr>
+				<p>Das ist der Inhalt zum Testen</p>
+				<p>Und noch viel mehr Inhalt, um die Zeile zu füllen</p>
+			</div>
+		</div>
+
+		<div class="container-fluid section py-5">
+			<div class="container text-left">
+				<h2>Hier ist eine Überschrift</h2>
+				<hr>
+				<p>Das ist der Inhalt zum Testen</p>
+				<p>Und noch viel mehr Inhalt, um die Zeile zu füllen</p>
+			</div>
+		</div>
 		<script src="js/jquery-3.4.1.slim.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 	</body>
