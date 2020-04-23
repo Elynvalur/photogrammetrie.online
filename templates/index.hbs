@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/index.css">
-		<title>{{ title }}</title>
-	</head>
-	<body>
-		
-		<nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light">
-			<a class="navbar-brand" href="#">{{ title }}</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Navbar anzeigen">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="manifest" href="./manifest.json">
+	<title>{{ title }}</title>
+</head>
+
+<body>
+
+	<nav id="navbar" class="navbar navbar-expand-md navbar-light bg-white">
+		<a class="navbar-brand mb-0 h1 text-weight-bold" href="#">{{ title }}</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent"
+			aria-controls="navContent" aria-expanded="false" aria-label="Navbar anzeigen">
 			<span class="navbar-toggler-icon"></span>
-			</button>
+		</button>
 
-			<div class="collapse navbar-collapse" id="navContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Tutorials</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Über</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-
-		<div class="jumbotron jumbotron-fluid mb-0">
-			<!--canvas id="jumbotroncanvas"></canvas-->
-			<div class="container">
-				<h1 class="display-4">Photogrammetrie</h1>
-				<p class="lead">3D-Modelle aus Bildern generieren</p>
-				<hr class="my-4">
-				<p>Erklärungen, Projekte & Tutorials</p>
-				<a class="btn btn-primary" href="#" role="button">Mehr erfahren</a>
+		<div class="collapse navbar-collapse" id="navContent">
+			<div class="navbar-nav ml-auto">
+				<a class="nav-link text-primary" href="#ueber">Über</a>
+				<a class="nav-link text-primary" href="#tutorials">Tutorials</a>
+				<a class="nav-link text-primary" href="#projekte">Projekte</a>
+				<a class="nav-link text-primary" href="#3dviewer">3D-Viewer</a>
+				<a class="nav-link text-primary" href="#impressum">Impressum</a>
+				<a class="nav-link d-none btn btn-primary text-white" id="installButton" href="#app">Jetzt die App
+					installieren</a>
 			</div>
 		</div>
+	</nav>
 
-		<div class="container-fluid section py-5">
-			<div class="container text-left">
-				<h2>Hier ist eine Überschrift</h2>
-				<hr>
-				<p>Das ist der Inhalt zum Testen</p>
-				<p>Und noch viel mehr Inhalt, um die Zeile zu füllen</p>
-			</div>
+	<div class="jumbotron jumbotron-fluid mb-0 text-center text-white">
+		<!--canvas id="jumbotroncanvas"></canvas-->
+		<div class="container">
+			<h2 class="display-2">Photogrammetrie</h2>
+			<p class="lead">[ˌfotoɡʁameˈtʁiː]</p>
+			<hr class="my-2 bg-white">
+			<p>Von Bildern zum 3D-Modell. Erklärungen, Projekte & Tutorials</p>
 		</div>
+	</div>
 
-		<div class="container-fluid section py-5">
-			<div class="container text-left">
-				<h2>Hier ist eine Überschrift</h2>
-				<hr>
-				<p>Das ist der Inhalt zum Testen</p>
-				<p>Und noch viel mehr Inhalt, um die Zeile zu füllen</p>
-			</div>
+	{{#each section}}
+	<div id="{{ this.id }}" class=" container-fluid section py-5">
+		<div class="container text-left">
+			<h2>{{ this.title }}</h2>
+			<hr>
+			{{#each this.content}}
+			<p>{{{ this }}}</p>
+			{{/each}}
 		</div>
-		<script src="js/jquery-3.4.1.slim.min.js"></script>
-		<script src="js/bootstrap.bundle.min.js"></script>
-	</body>
+	</div>
+	{{/each}}
+
+	<div id="impressum" class="container-fluid section py-3">
+		<div class="container text-center">
+			<h4>Impressum</h4>
+			<hr>
+			<p>Name Nachname</p>
+			<p>Anschrift</p>
+			<p><a href="mailto:kontakt@photogrammetrie.online">Kontakt</a></p>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.slim.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="sw-init.js"></script>
+</body>
+
 </html>

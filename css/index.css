@@ -1,22 +1,32 @@
-.section:nth-child(2n+1) {
-	background-color: #FFFFFF;
+html,
+body {
+  font-family: "Muli", sans-serif;
+}
+
+.section:nth-child(2n + 1) {
+  background-color: #eceff4;
 }
 
 .section:nth-child(2n) {
-	background-color: #FAFAFA;
+  background-color: #e5e9f0;
+}
+
+#impressum {
+  background-color: #d8dee9;
 }
 
 .jumbotron {
-	background-color: #BCDBFE;
-}
-
-.jumbotron h1 {
-	font-size: 6vw;
-	word-wrap: anywhere;
+  background: -webkit-linear-gradient(to bottom, #5e81ac, #81a1c1);
+  background: linear-gradient(to bottom, #5e81ac, #81a1c1);
+  background: #81a1c1;
+  background: url("/media/preview.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 60px 0 #424242;
+  box-shadow: inset 0 0 60px 0 #424242;
 }
 
 #jumbotroncanvas {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0px;
 }

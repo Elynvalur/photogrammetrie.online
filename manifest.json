@@ -1,0 +1,16 @@
+{
+  "name": "photogrammetrie.online",
+  "short-name": "photogrammetrie.online",
+  "start_url": "../",
+  "display": "fullscreen",
+  "background_color": "#ECEFF4",
+  "description": "photogrammetrie.online als PWA",
+  "theme_color": "#ECEFF4",
+  "icons": [
+    {
+      "src": "./media/pwalogo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
