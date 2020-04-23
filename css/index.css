@@ -19,7 +19,7 @@ body {
   background: -webkit-linear-gradient(to bottom, #5e81ac, #81a1c1);
   background: linear-gradient(to bottom, #5e81ac, #81a1c1);
   background: #81a1c1;
-  background: url("/media/preview.webp");
+  background: url("/media/header.webp");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: inset 0 0 60px 0 #424242;
@@ -29,4 +29,10 @@ body {
 #jumbotroncanvas {
   position: absolute;
   top: 0px;
+}
+
+.svg {
+	min-width: 1rem;
+	width: calc(2rem + 10vw);
+	max-width: 8rem;
 }

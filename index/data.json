@@ -5,6 +5,7 @@
       "id": "willkommen",
       "title": "Herzlich Willkommen!",
       "content": [
+				"<div class='container-fluid text-center'><img class='svg m-1' src='media/dslr.svg'></div>",
         "Photogrammetrie ist eine interessante Technologie, die in vielen Gebieten zum Einsatz kommt. Diese Seite widmet sich der Sammlung von Informationen, Tutorials und Anleitungen, sowie Links zu sehr spannenden Projekten."
       ]
     },
@@ -13,6 +14,7 @@
       "title": "Was ist Photogrammetrie überhaupt?",
       "content": [
         "Photogrammetrie beschreibt Methoden, aus Bildern Informationen zur Größe, Form und Farbe eines Objektes zu gewinnen und diese weiter zu verwenden. Ein Teil dieser Anwendungsfälle besteht darin, 3D-Modelle aus diesen Daten zu generieren. Dabei sind mehrere Arbeitsschritte und Algorithmen notwendig, die dann am Ende der Berechnung ein 3D-Modell mit entsprechender aus den Bildern generierter Textur liefern.",
+				"<div class='container-fluid text-center'><img class='svg m-1' src='media/berlin.svg'></div>",
         "Der Nutzung der Modelle sind dann wenig Grenzen gesetzt. Sie können je nach Themengebiet auf einer Internetseite dargestellt werden, als Ressource in Videos oder Bildern dienen oder sogar mit einem 3D-Drucker ausgedruckt werden!"
       ]
     },
@@ -20,8 +22,9 @@
       "id": "3dviewer",
       "title": "3D-Modellviewer",
       "content": [
+				"<div class='container-fluid text-center'><img class='svg m-1' src='media/3d.svg'></div>",
         "Ich erstelle selbst 3D-Modelle aus Photogrammetrie-Daten, welche ich oft in Web-Projekten nutze. Im Zuge dessen entwickelt sich eine Anwendung, die die Modelle darstellt und Interaktion zulässt.",
-        "<button type='button' class='btn btn-primary'>Coming Soon!</button>"
+        "<button type='button' class='btn btn-outline-primary'>Coming Soon!</button>"
       ]
     }
   ]

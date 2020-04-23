@@ -46,7 +46,7 @@
 	{{#each section}}
 	<div id="{{ this.id }}" class=" container-fluid section py-5">
 		<div class="container text-left">
-			<h2>{{ this.title }}</h2>
+			<h2 class="font-weight-bold">{{ this.title }}</h2>
 			<hr>
 			{{#each this.content}}
 			<p>{{{ this }}}</p>
@@ -62,6 +62,7 @@
 			<p>Name Nachname</p>
 			<p>Anschrift</p>
 			<p><a href="mailto:kontakt@photogrammetrie.online">Kontakt</a></p>
+			<small class="text-muted">Icons from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> & <a href="https://fontawesome.com/" title="FontAwesome">www.fontawesome.com</a></small>
 		</div>
 	</div>
 	<script src="js/jquery-3.4.1.slim.min.js"></script>
