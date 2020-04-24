@@ -5,27 +5,46 @@
       "id": "willkommen",
       "title": "Herzlich Willkommen!",
       "content": [
-				"<div class='container-fluid text-center'><img class='svg m-1' src='media/dslr.svg'></div>",
-        "Photogrammetrie ist eine interessante Technologie, die in vielen Gebieten zum Einsatz kommt. Diese Seite widmet sich der Sammlung von Informationen, Tutorials und Anleitungen, sowie Links zu sehr spannenden Projekten."
+        "Photogrammetrie ist eine interessante Technologie, die in vielen Gebieten zum Einsatz kommt. Ein großer Teil der Anwendung beschäftigt sich mit der Generierung von 3D-Modellen und deren Nutzung. Genau diesen Bereich versucht diese Seite etwas näher zu erläutern und auch Einsteigern die Photogrammetrie verständlich zu machen.",
+        "Dabei werden auf dieser Seite ein paar coole Open Source-Projekte zur Inspiration gesammelt und Anleitungen bzw. Tipps zur Photogrammetrie veröffentlicht.",
+        "Der Code dieser Seite ist auf Github veröffentlicht und jeder, der an dieser Seite mitarbeiten will, darf mich gerne kontaktieren. Ich freue mich auf euch!",
+        "<a class='btn btn-outline-primary' href='https://github.com/LucaJunge/photogrammetrie.online'>Zum Quellcode der Seite auf github.com</a>"
       ]
     },
     {
       "id": "photogrammetrie",
       "title": "Was ist Photogrammetrie überhaupt?",
       "content": [
-        "Photogrammetrie beschreibt Methoden, aus Bildern Informationen zur Größe, Form und Farbe eines Objektes zu gewinnen und diese weiter zu verwenden. Ein Teil dieser Anwendungsfälle besteht darin, 3D-Modelle aus diesen Daten zu generieren. Dabei sind mehrere Arbeitsschritte und Algorithmen notwendig, die dann am Ende der Berechnung ein 3D-Modell mit entsprechender aus den Bildern generierter Textur liefern.",
-				"<div class='container-fluid text-center'><img class='svg m-1' src='media/berlin.svg'></div>",
-        "Der Nutzung der Modelle sind dann wenig Grenzen gesetzt. Sie können je nach Themengebiet auf einer Internetseite dargestellt werden, als Ressource in Videos oder Bildern dienen oder sogar mit einem 3D-Drucker ausgedruckt werden!"
+        "<div class='container p-2'><div class='row text-center'><div class='col-4'><img class='svg' src='media/trunk.svg'></div><div class='col-4'><img class='svg' src='media/museum.svg'></div><div class='col-4'><img class='svg' src='media/stone.svg'></div></div></div>",
+        "<blockquote class='blockquote text-right p-3 rounded'><p class='mb-1'>\"Photogrammetry is the science of making measurements from photographs. It infers the geometry of a scene from a set of unordered photographs or videos. Photography is the projection of a 3D scene onto a 2D plane, losing depth information. The goal of photogrammetry is to reverse this process.\"</p><footer class='blockquote-footer'>(<a href='https://github.com/alicevision/meshroom'>Meshroom über Photogrammetrie auf github.com</a>)</footer></blockquote>",
+        "Der Nutzung der Modelle sind dann wenig Grenzen gesetzt. Sie können je nach Themengebiet auf einer Internetseite dargestellt werden, als Ressource in Videos oder Bildern dienen oder sogar mit einem 3D-Drucker ausgedruckt werden!",
+        "<button type='button' class='btn btn-outline-primary'>Mehr erfahren</button>"
+      ]
+    },
+    {
+      "id": "alicevision",
+      "title": "AliceVison & Meshroom",
+      "content": [
+        "<div class='container p-2'><div class='row'><div class='col-6 text-center'><img class='svg' src='media/alicevision.svg'></div><div class='col-6 text-center'><img class='svg' src='media/meshroom.svg'></div></div></div>",
+        "Für meinen Workflow und meine Photogrammetrie-Pipeline nutze ich die Open Source-Software AliceVision und das zugehörige Programm Meshroom.",
+        "AliceVision besteht aus einer Sammlung von modernsten Computer Vision-Algorithmen, die eine gesamte Photogrammetrie-Pipeline abbilden. Meshroom ist eine 3D-Rekonstruktions-Software, die die in AliceVision definierten Algorithmen implementiert.",
+        "Wenn du wissen willst, wie man Meshroom installiert und ein 3D-Modell aus Bildern generiert, habe ich eine Anleitung geschrieben.",
+        "<button type='button' class='btn btn-outline-primary'>Coming Soon!</button>"
       ]
     },
     {
       "id": "3dviewer",
       "title": "3D-Modellviewer",
       "content": [
-				"<div class='container-fluid text-center'><img class='svg m-1' src='media/3d.svg'></div>",
+        "<div class='container-fluid text-center'><img class='svg m-1' src='media/3d.svg'></div>",
         "Ich erstelle selbst 3D-Modelle aus Photogrammetrie-Daten, welche ich oft in Web-Projekten nutze. Im Zuge dessen entwickelt sich eine Anwendung, die die Modelle darstellt und Interaktion zulässt.",
         "<button type='button' class='btn btn-outline-primary'>Coming Soon!</button>"
       ]
+    },
+    {
+      "id": "projekte",
+      "title": "Projekte",
+      "content": ["Hier entsteht eine Sammlung mit spannenden Projekten..."]
     }
   ]
 }

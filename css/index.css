@@ -15,6 +15,10 @@ body {
   background-color: #d8dee9;
 }
 
+.blockquote {
+  background-color: #d8dee9;
+}
+
 .jumbotron {
   background: -webkit-linear-gradient(to bottom, #5e81ac, #81a1c1);
   background: linear-gradient(to bottom, #5e81ac, #81a1c1);
@@ -32,7 +36,7 @@ body {
 }
 
 .svg {
-	min-width: 1rem;
-	width: calc(2rem + 10vw);
-	max-width: 8rem;
+  min-width: 1rem;
+  width: calc(2rem + 10vw);
+  max-width: 8rem;
 }
